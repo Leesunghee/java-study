@@ -12,15 +12,15 @@ public class Singleton {
         System.out.println("create instance");
     }
 
-    static {
-
-        System.out.println("exec in static block");
-        if (instance == null) {
-            synchronized (Singleton.class) {
-                instance = new Singleton();
-            }
-        }
-    }
+//    static {
+//
+//        System.out.println("exec in static block");
+//        if (instance == null) {
+//            synchronized (Singleton.class) {
+//                instance = new Singleton();
+//            }
+//        }
+//    }
 
     public static Singleton getInstance() {
         if (instance == null) {
