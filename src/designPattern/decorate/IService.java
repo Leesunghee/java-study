@@ -5,4 +5,6 @@ package designPattern.decorate;
  */
 public interface IService {
     void runSomething();
+
+
 }
