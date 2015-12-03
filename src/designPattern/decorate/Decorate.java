@@ -5,11 +5,12 @@ package designPattern.decorate;
  */
 public class Decorate implements IService {
 
-    DecorateService service = new DecorateService();
+    DecorateService service;
 
     @Override
-    public void runSomething() {
+    public String runSomething() {
+        service = new DecorateService();
         System.out.println("control flow..");
-        service.runSomething();
+        return service.runSomething();
     }
 }

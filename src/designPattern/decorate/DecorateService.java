@@ -6,8 +6,8 @@ package designPattern.decorate;
 public class DecorateService implements IService {
 
     @Override
-    public void runSomething() {
+    public String runSomething() {
         String str = "decorate";
-        System.out.printf(str + " runSomething");
+        return str + " runSomething";
     }
 }

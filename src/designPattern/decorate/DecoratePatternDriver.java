@@ -6,8 +6,7 @@ package designPattern.decorate;
 public class DecoratePatternDriver {
 
     public static void main(String[] args) {
-        IService service = new Decorate();
-
-        service.runSomething();
+        IService decorate = new Decorate();
+        System.out.println(decorate.runSomething());
     }
 }
