@@ -5,7 +5,7 @@ package designPattern.proxy;
  */
 public class ProxyService implements IService {
     @Override
-    public void runSomething() {
-        System.out.printf("runSomething");
+    public String runSomething() {
+        return "runSomething";
     }
 }

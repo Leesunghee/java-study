@@ -5,6 +5,6 @@ package designPattern.proxy;
  */
 public interface IService {
 
-    public abstract void runSomething();
+    public abstract String runSomething();
 
 }

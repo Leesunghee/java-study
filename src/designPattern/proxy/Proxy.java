@@ -5,11 +5,12 @@ package designPattern.proxy;
  */
 public class Proxy implements IService {
 
-    IService service = new ProxyService();
+    IService service;
 
     @Override
-    public void runSomething() {
+    public String runSomething() {
+        service = new ProxyService();
         System.out.println("control flow....");
-        service.runSomething();
+        return service.runSomething();
     }
 }
